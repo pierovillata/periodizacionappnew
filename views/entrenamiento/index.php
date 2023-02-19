@@ -63,6 +63,7 @@ use edofre\fullcalendar\models\Event;
             'weekNumbers' => true,
             'selectable'  => true,
         ],
+        
         'events'        => $events
     ]);
 ?>
