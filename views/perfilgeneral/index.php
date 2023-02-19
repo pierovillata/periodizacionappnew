@@ -13,7 +13,7 @@ use yii\widgets\Pjax;
 $this->title = Yii::t('app', 'Perfilgenerals');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="perfilgeneral-index">
+<div class="perfilgeneral-index table-responsive">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

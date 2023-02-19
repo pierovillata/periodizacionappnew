@@ -40,51 +40,48 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         'options' => ['class' => 'navbar-nav'],
         'items' => [
            
-            ['label' => 'Periodizacionapp', 'items'=>[ 
-                ['label' => 'Inicio', 'url' => ['/site/index']],
+            ['label' => 'Home','url' => ['/site/index'],'items'=>[                 
                 ['label' => 'Nosotros', 'url' => ['/site/about']],
-                ['label' => 'Contacto', 'url' => ['/site/contact']],
-                
+                ['label' => 'Contacto', 'url' => ['/site/contact']],                
             ]],         
            
-            ['label' => 'Gestion', 'items'=>[ 
-                ['label' => 'Deportes', 'url' => ['/deporte/index']],
-                ['label' => 'Entrenadores', 'url' => ['/entrenador/index']],
-                ['label' => 'Atletas', 'url' => ['/atleta/index']],
-                
-            ]],            
-          
-            ['label' => 'Perfiles Atletas', 'items'=>[ 
-                ['label' => 'P. General', 'url' => ['/perfilgeneral/index']],
-                ['label' => 'P. Antropometrico', 'url' => ['/perfilantropometrico/index']],
-                ['label' => 'Pruebas Atletas', 'url' => ['/pruebasatletas/index']],
+           
+            ['label' => 'Atletas', 'items'=>[ 
+                ['label' => 'Gestion Atletas', 'url' => ['/atleta/index']],
+                ['label' => 'Perfil General', 'url' => ['/perfilgeneral/index']], 
+                ['label' => 'Pruebas Rendimiento ', 'url' => ['/pruebasfisicas/index']],
+                ['label' => 'Plan Nutricional ', 'url' => ['/plannutricional/index']],
+
             ]],
+
+           
+
             ['label' => 'Planificacion', 'items'=>[ 
                 ['label' => 'Temporada', 'url' => ['/temporada/index']],
                 ['label' => 'Macrociclos', 'url' => ['/macrociclos/index']],
                 ['label' => 'Mesociclos', 'url' => ['/mesociclos/index']],
-                
-            ]],
-            ['label' => 'Programacion', 'items'=>[ 
-                ['label' => 'Microciclo Plan', 'url' => ['/microcicloplan/index']],
+                ['label' => 'Microciclos Plan', 'url' => ['/microcicloplan/index']],
                 ['label' => 'Microciclo Real', 'url' => ['/microcicloreal/index']],
                 
             ]],
-
-            ['label' => 'Pruebas', 'items'=>[ 
-                ['label' => 'Gestion de Pruebas ', 'url' => ['/pruebas/index']],
-                ['label' => 'Pruebas Fisicas ', 'url' => ['/pruebasfisicas/index']],
-                ['label' => 'Pruebas Rendimiento', 'url' => ['/pruebasrendimiento/index']],
-
-            ]],
-            ['label' => 'Nutricion', 'items'=>[ 
-                ['label' => 'Plan Nutricional ', 'url' => ['/plannutricional/index']],
-                ['label' => 'Calculo Nutricional', 'url' => ['/calculoalimenticio/index']],
+            ['label' => 'Agenda', 'items'=>[ 
+                ['label' => 'Agenda', 'url' => ['/agenda/index']],
+                ['label' => 'Entrenamiento', 'url' => ['/entrenamiento/index']],                
+                         
                 
-            ]],
-            ['label' => 'Graficos', 'items'=>[ 
+            ]],  
+
+            ['label' => 'Gestion', 'items'=>[ 
+                ['label' => 'Deportes', 'url' => ['/deporte/index']],
+                ['label' => 'Entrenadores', 'url' => ['/entrenador/index']],  
+                ['label' => 'Gestion de Pruebas ', 'url' => ['/pruebas/index']],            
+                
+            ]],  
+           
+
+            ['label' => 'Informes', 'items'=>[ 
                 ['label' => 'Graficos ', 'url' => ['/graficos/index']],
-                ['label' => 'Especiales', 'url' => ['/graficosespeciales/index']],
+               
                 
             ]],
             Yii::$app->user->isGuest
